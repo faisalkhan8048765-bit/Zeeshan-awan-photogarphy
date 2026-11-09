@@ -1,0 +1,2690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZM Studio Photography & Videography | Luxury Studio</title>
+    <meta name="description" content="Capture your most beautiful moments with ZM Studio Photography & Videography. Premium wedding photography, cinematic videography, portrait, event, and outdoor photoshoots. Multan Road, Near Polytechnic College. Call 03449170933.">
+    
+    <!-- Google Fonts: Cinzel & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons 6 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- External Stylesheet Backup -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- COMPLETE BULLETPROOF SELF-CONTAINED CSS (Zero CDN Dependency for Layout & Design) -->
+    <style>
+        /* --- CSS Reset & Variables --- */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --bg-dark: #08080a;
+            --bg-secondary: #101015;
+            --bg-card: #15151c;
+            --bg-card-hover: #1b1b24;
+            --text-main: #f1f5f9;
+            --text-muted: #94a3b8;
+            --text-gold: #d4af37;
+            --gold-light: #f5e7b5;
+            --gold-primary: #d4af37;
+            --gold-dark: #a88118;
+            --gold-gradient: linear-gradient(135deg, #f5e7b5 0%, #d4af37 50%, #997312 100%);
+            --gold-border: rgba(212, 175, 55, 0.28);
+            --gold-border-hover: rgba(212, 175, 55, 0.65);
+            --font-heading: 'Cinzel', serif;
+            --font-serif: 'Playfair Display', serif;
+            --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            --transition-smooth: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        html {
+            scroll-behavior: smooth;
+            background-color: var(--bg-dark);
+            color-scheme: dark;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            font-family: var(--font-sans);
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Ambient Lighting Blobs */
+        .ambient-glow {
+            position: fixed;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 0;
+            filter: blur(140px);
+            opacity: 0.12;
+        }
+        .glow-1 {
+            width: 550px;
+            height: 550px;
+            background: radial-gradient(circle, #d4af37 0%, transparent 70%);
+            top: -120px;
+            right: -120px;
+        }
+        .glow-2 {
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, #b58d22 0%, transparent 70%);
+            top: 45%;
+            left: -200px;
+        }
+        .glow-3 {
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, #d4af37 0%, transparent 70%);
+            bottom: 5%;
+            right: -100px;
+        }
+
+        /* --- Layout Containers & Utility Classes --- */
+        .container {
+            width: 100%;
+            max-width: 1240px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .section-padding {
+            padding-top: 5.5rem;
+            padding-bottom: 5.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            position: relative;
+        }
+
+        .text-center { text-align: center; }
+        .text-left { text-align: left; }
+        .mx-auto { margin-left: auto; margin-right: auto; }
+
+        /* Typography */
+        h1, h2, h3, h4, h5, .font-heading {
+            font-family: var(--font-heading);
+            letter-spacing: 0.02em;
+        }
+
+        .font-serif {
+            font-family: var(--font-serif);
+        }
+
+        .gold-gradient-text {
+            background: var(--gold-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+        }
+
+        .section-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.25em;
+            color: var(--gold-light);
+            margin-bottom: 0.75rem;
+        }
+        .section-eyebrow::before, .section-eyebrow::after {
+            content: '';
+            width: 24px;
+            height: 1px;
+            background: var(--gold-primary);
+            display: inline-block;
+        }
+
+        .section-title {
+            font-size: 2.25rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 0.85rem;
+            line-height: 1.25;
+        }
+
+        .section-desc {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            max-width: 650px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.6;
+        }
+
+        @media (min-width: 768px) {
+            .section-title { font-size: 3rem; }
+        }
+
+        /* --- Buttons --- */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.6rem;
+            padding: 0.85rem 1.85rem;
+            border-radius: 9999px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            cursor: pointer;
+            text-decoration: none;
+            transition: var(--transition-smooth);
+            border: none;
+            font-family: var(--font-sans);
+        }
+
+        .btn-gold {
+            background: var(--gold-gradient);
+            color: #000;
+            box-shadow: 0 4px 20px rgba(212, 175, 55, 0.35);
+        }
+        .btn-gold:hover {
+            transform: translateY(-2px);
+            filter: brightness(1.1);
+            box-shadow: 0 8px 30px rgba(212, 175, 55, 0.55);
+        }
+
+        .btn-outline-gold {
+            background: rgba(212, 175, 55, 0.05);
+            color: #f1f5f9;
+            border: 1px solid var(--gold-border);
+            backdrop-filter: blur(8px);
+        }
+        .btn-outline-gold:hover {
+            border-color: var(--gold-primary);
+            background: rgba(212, 175, 55, 0.15);
+            color: #fff;
+            transform: translateY(-2px);
+        }
+
+        /* --- Top Announcement Bar --- */
+        .announcement-bar {
+            background-color: #0c0c10;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+            padding: 0.5rem 1.5rem;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            position: relative;
+            z-index: 50;
+        }
+        .announcement-container {
+            max-width: 1240px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        .announcement-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            color: var(--gold-light);
+            font-weight: 600;
+        }
+        .pulse-dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background-color: #10b981;
+            box-shadow: 0 0 10px #10b981;
+        }
+        .announcement-links {
+            display: flex;
+            align-items: center;
+            gap: 1.25rem;
+        }
+        .announcement-links a {
+            color: #cbd5e1;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            transition: color 0.2s;
+        }
+        .announcement-links a:hover {
+            color: var(--gold-primary);
+        }
+
+        /* --- Header / Navigation Bar --- */
+        .site-header {
+            position: sticky;
+            top: 0;
+            z-index: 40;
+            background-color: rgba(8, 8, 10, 0.94);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            transition: var(--transition-smooth);
+        }
+        .site-header.scrolled {
+            background-color: rgba(8, 8, 10, 0.98);
+            border-bottom-color: rgba(212, 175, 55, 0.25);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+        }
+        .nav-wrapper {
+            max-width: 1240px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            height: 76px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .brand-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+        }
+        .brand-icon-circle {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            border: 1px solid var(--gold-border);
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.15), transparent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gold-primary);
+            font-size: 1.15rem;
+            transition: var(--transition-smooth);
+        }
+        .brand-logo:hover .brand-icon-circle {
+            border-color: var(--gold-primary);
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+        }
+        .brand-text {
+            display: flex;
+            flex-direction: column;
+        }
+        .brand-name {
+            font-family: var(--font-heading);
+            font-size: 1.15rem;
+            font-weight: 800;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            background: var(--gold-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .brand-tagline {
+            font-size: 0.65rem;
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-top: -2px;
+        }
+
+        .nav-menu {
+            display: none;
+            align-items: center;
+            gap: 1.85rem;
+        }
+        .nav-link {
+            color: #cbd5e1;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-decoration: none;
+            letter-spacing: 0.04em;
+            position: relative;
+            padding: 0.4rem 0;
+            transition: color 0.25s;
+        }
+        .nav-link:hover, .nav-link.active {
+            color: var(--gold-light);
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0%;
+            height: 2px;
+            background: var(--gold-gradient);
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after, .nav-link.active::after {
+            width: 100%;
+        }
+
+        .nav-actions {
+            display: none;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .mobile-toggle {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            background: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            color: #fff;
+            cursor: pointer;
+        }
+        .mobile-toggle span {
+            width: 22px;
+            height: 2px;
+            background-color: #fff;
+            transition: var(--transition-smooth);
+        }
+
+        /* Mobile Drawer */
+        .mobile-menu-drawer {
+            display: none;
+            background-color: #0c0c12;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 1.5rem;
+        }
+        .mobile-menu-drawer.open {
+            display: block;
+        }
+        .mobile-menu-drawer a {
+            display: block;
+            padding: 0.75rem 0;
+            color: #e2e8f0;
+            text-decoration: none;
+            font-size: 0.95rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            font-weight: 500;
+        }
+        .mobile-menu-drawer a:hover {
+            color: var(--gold-primary);
+        }
+
+        @media (min-width: 992px) {
+            .nav-menu { display: flex; }
+            .nav-actions { display: flex; }
+            .mobile-toggle { display: none; }
+        }
+
+        /* --- Hero Section --- */
+        .hero-section {
+            position: relative;
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 5rem 1.5rem;
+            text-align: center;
+            overflow: hidden;
+        }
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            z-index: 1;
+        }
+        .hero-bg img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            filter: brightness(0.35) contrast(1.1);
+            transform: scale(1.02);
+        }
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at center, rgba(8, 8, 10, 0.4) 0%, rgba(8, 8, 10, 0.95) 90%);
+        }
+        .hero-content {
+            position: relative;
+            z-index: 5;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.4rem 1.25rem;
+            border-radius: 9999px;
+            background: rgba(212, 175, 55, 0.1);
+            border: 1px solid var(--gold-border);
+            color: var(--gold-light);
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+            backdrop-filter: blur(6px);
+        }
+        .hero-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #ffffff;
+            line-height: 1.15;
+            margin-bottom: 1.25rem;
+        }
+        @media (min-width: 768px) {
+            .hero-title { font-size: 4.25rem; }
+        }
+        .hero-subtitle {
+            font-size: 1.05rem;
+            color: #cbd5e1;
+            font-weight: 300;
+            line-height: 1.7;
+            max-width: 720px;
+            margin: 0 auto 2.25rem;
+        }
+        .hero-btns {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3.5rem;
+        }
+
+        .hero-features-bar {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            max-width: 850px;
+            margin: 0 auto;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: left;
+        }
+        @media (min-width: 768px) {
+            .hero-features-bar { grid-template-columns: repeat(4, 1fr); }
+        }
+        .hero-feature-item {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 12px;
+            padding: 0.85rem 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        .hero-feature-icon {
+            color: var(--gold-primary);
+            font-size: 1.25rem;
+        }
+        .hero-feature-title {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: #fff;
+        }
+        .hero-feature-sub {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+        }
+
+        /* --- About Section --- */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3.5rem;
+            align-items: center;
+        }
+        @media (min-width: 992px) {
+            .about-grid { grid-template-columns: 5fr 7fr; }
+        }
+
+        .about-image-wrapper {
+            position: relative;
+            max-width: 480px;
+            margin: 0 auto;
+        }
+        .about-image-border {
+            position: absolute;
+            inset: -10px;
+            border: 1px solid var(--gold-border);
+            border-radius: 20px;
+            transform: rotate(2deg);
+            pointer-events: none;
+        }
+        .about-image-card {
+            position: relative;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.8);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .about-image-card img {
+            width: 100%;
+            height: 480px;
+            object-fit: cover;
+            display: block;
+        }
+        .about-floating-badge {
+            position: absolute;
+            bottom: 1.25rem;
+            left: 1.25rem;
+            right: 1.25rem;
+            padding: 1.25rem;
+            border-radius: 14px;
+            background: rgba(16, 16, 22, 0.88);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--gold-border);
+        }
+        .badge-header {
+            display: flex;
+            align-items: center;
+            gap: 0.85rem;
+            margin-bottom: 0.65rem;
+        }
+        .badge-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: rgba(212, 175, 55, 0.15);
+            border: 1px solid var(--gold-border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gold-primary);
+            font-size: 1.25rem;
+        }
+        .badge-title {
+            font-family: var(--font-heading);
+            font-size: 1rem;
+            font-weight: 700;
+            color: #fff;
+        }
+        .badge-sub {
+            font-size: 0.75rem;
+            color: var(--gold-light);
+        }
+        .badge-footer {
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            padding-top: 0.6rem;
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        .about-text-content {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+        }
+        .about-text-content p {
+            color: #cbd5e1;
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+        .about-cards-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            margin-top: 0.5rem;
+        }
+        @media (min-width: 640px) {
+            .about-cards-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        .about-mini-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.07);
+            border-radius: 12px;
+            padding: 1.15rem;
+            transition: var(--transition-smooth);
+        }
+        .about-mini-card:hover {
+            border-color: var(--gold-border-hover);
+            transform: translateY(-2px);
+        }
+        .about-mini-title {
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--gold-light);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.35rem;
+        }
+        .about-mini-desc {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+
+        /* --- Services Section --- */
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        @media (min-width: 640px) {
+            .services-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (min-width: 992px) {
+            .services-grid { grid-template-columns: repeat(3, 1fr); }
+        }
+
+        .service-card {
+            background: var(--bg-card);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 18px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: var(--transition-smooth);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+        }
+        .service-card:hover {
+            border-color: var(--gold-border-hover);
+            transform: translateY(-6px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8), 0 0 20px rgba(212, 175, 55, 0.15);
+        }
+        .service-card.featured {
+            border-color: var(--gold-border);
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.12);
+        }
+        .service-image-box {
+            position: relative;
+            height: 230px;
+            overflow: hidden;
+        }
+        .service-image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+        .service-card:hover .service-image-box img {
+            transform: scale(1.08);
+        }
+        .service-badge {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            background: rgba(0, 0, 0, 0.75);
+            border: 1px solid var(--gold-border);
+            color: var(--gold-light);
+            font-size: 0.65rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            backdrop-filter: blur(4px);
+        }
+        .service-badge.gold {
+            background: var(--gold-gradient);
+            color: #000;
+            border: none;
+        }
+        .service-body {
+            padding: 1.65rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex: 1;
+            gap: 1.25rem;
+        }
+        .service-header-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
+        .service-title {
+            font-family: var(--font-heading);
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #ffffff;
+        }
+        .service-icon-circle {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: rgba(212, 175, 55, 0.1);
+            color: var(--gold-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.95rem;
+        }
+        .service-description {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            line-height: 1.55;
+            margin-bottom: 1rem;
+        }
+        .service-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            margin-bottom: 1.25rem;
+        }
+        .service-list li {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.78rem;
+            color: #cbd5e1;
+        }
+        .service-list li i {
+            color: var(--gold-primary);
+            font-size: 0.7rem;
+        }
+        .service-book-btn {
+            width: 100%;
+            padding: 0.75rem;
+            border-radius: 10px;
+            border: 1px solid var(--gold-border);
+            background: transparent;
+            color: var(--gold-light);
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            transition: var(--transition-smooth);
+        }
+        .service-book-btn:hover {
+            background: var(--gold-gradient);
+            color: #000;
+            border-color: transparent;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.35);
+        }
+        .service-card.featured .service-book-btn {
+            background: var(--gold-gradient);
+            color: #000;
+            border-color: transparent;
+        }
+
+        /* --- Portfolio & Lightbox --- */
+        .filter-buttons-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.5rem;
+            margin: 2.5rem 0 3rem;
+        }
+        .filter-btn {
+            padding: 0.55rem 1.25rem;
+            border-radius: 9999px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            color: var(--text-muted);
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+        }
+        .filter-btn:hover {
+            color: var(--gold-light);
+            border-color: var(--gold-border);
+            background: rgba(212, 175, 55, 0.08);
+        }
+        .filter-btn.active {
+            background: var(--gold-gradient);
+            color: #000;
+            border-color: transparent;
+            font-weight: 700;
+            box-shadow: 0 2px 15px rgba(212, 175, 55, 0.3);
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+        @media (min-width: 640px) {
+            .portfolio-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (min-width: 992px) {
+            .portfolio-grid { grid-template-columns: repeat(3, 1fr); }
+        }
+
+        .portfolio-card {
+            position: relative;
+            border-radius: 16px;
+            overflow: hidden;
+            background: var(--bg-card);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            cursor: pointer;
+            height: 320px;
+            transition: var(--transition-smooth);
+        }
+        .portfolio-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--gold-primary);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8), 0 0 25px rgba(212, 175, 55, 0.2);
+        }
+        .portfolio-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+        .portfolio-card:hover img {
+            transform: scale(1.08);
+        }
+        .portfolio-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(8, 8, 10, 0.95) 0%, rgba(8, 8, 10, 0.3) 60%, transparent 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 1.5rem;
+            transition: opacity 0.3s;
+        }
+        .portfolio-tag {
+            align-self: flex-start;
+            padding: 0.2rem 0.65rem;
+            border-radius: 9999px;
+            background: rgba(212, 175, 55, 0.2);
+            border: 1px solid var(--gold-border);
+            color: var(--gold-light);
+            font-size: 0.65rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 0.5rem;
+        }
+        .portfolio-title {
+            font-family: var(--font-heading);
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 0.25rem;
+        }
+        .portfolio-desc {
+            font-size: 0.75rem;
+            color: #cbd5e1;
+            line-height: 1.4;
+        }
+        .portfolio-zoom-icon {
+            position: absolute;
+            top: 1.25rem;
+            right: 1.25rem;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: rgba(0, 0, 0, 0.65);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: var(--gold-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.85rem;
+            transition: var(--transition-smooth);
+        }
+        .portfolio-card:hover .portfolio-zoom-icon {
+            background: var(--gold-gradient);
+            color: #000;
+            border-color: transparent;
+        }
+
+        /* Lightbox Modal */
+        .lightbox-modal {
+            position: fixed;
+            inset: 0;
+            z-index: 100;
+            background: rgba(0, 0, 0, 0.96);
+            backdrop-filter: blur(16px);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem;
+        }
+        .lightbox-modal.active {
+            display: flex;
+        }
+        .lightbox-close-btn {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #fff;
+            font-size: 1.25rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition-smooth);
+        }
+        .lightbox-close-btn:hover {
+            background: var(--gold-gradient);
+            color: #000;
+        }
+        .lightbox-nav-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #fff;
+            font-size: 1.15rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition-smooth);
+            z-index: 10;
+        }
+        .lightbox-nav-btn:hover {
+            background: var(--gold-gradient);
+            color: #000;
+        }
+        .lightbox-prev { left: 1.5rem; }
+        .lightbox-next { right: 1.5rem; }
+        .lightbox-content-box {
+            max-width: 900px;
+            width: 100%;
+            max-height: 90vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .lightbox-image-holder {
+            max-height: 65vh;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            margin-bottom: 1rem;
+            background: #000;
+        }
+        .lightbox-image-holder img {
+            max-height: 65vh;
+            max-width: 100%;
+            object-fit: contain;
+            display: block;
+        }
+        .lightbox-info-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 0.5rem;
+        }
+        .lightbox-title {
+            font-family: var(--font-heading);
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 0.25rem;
+        }
+        .lightbox-desc {
+            font-size: 0.85rem;
+            color: #cbd5e1;
+            max-width: 600px;
+            line-height: 1.5;
+            margin-bottom: 0.75rem;
+        }
+
+        /* --- Why Choose Us Section --- */
+        .why-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+        @media (min-width: 640px) {
+            .why-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (min-width: 992px) {
+            .why-grid { grid-template-columns: repeat(3, 1fr); }
+        }
+        .why-card {
+            background: var(--bg-card);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            padding: 2rem;
+            transition: var(--transition-smooth);
+        }
+        .why-card:hover {
+            border-color: var(--gold-border-hover);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.7), 0 0 20px rgba(212, 175, 55, 0.15);
+        }
+        .why-icon-box {
+            width: 56px;
+            height: 56px;
+            border-radius: 14px;
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.2), transparent);
+            border: 1px solid var(--gold-border);
+            color: var(--gold-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 1.25rem;
+        }
+        .why-title {
+            font-family: var(--font-heading);
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 0.65rem;
+        }
+        .why-desc {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        /* --- Booking Form Section --- */
+        .booking-card {
+            background: var(--bg-card);
+            border: 1px solid var(--gold-border);
+            border-radius: 24px;
+            padding: 2.5rem 1.75rem;
+            max-width: 850px;
+            margin: 3rem auto 0;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+            position: relative;
+        }
+        @media (min-width: 768px) {
+            .booking-card { padding: 3rem; }
+        }
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+        @media (min-width: 640px) {
+            .form-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.45rem;
+            text-align: left;
+        }
+        .form-group.full-width {
+            grid-column: 1 / -1;
+        }
+        .form-label {
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: #e2e8f0;
+        }
+        .form-label span {
+            color: var(--gold-primary);
+        }
+        .form-control {
+            width: 100%;
+            padding: 0.85rem 1rem;
+            background: #0d0d12;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 10px;
+            color: #ffffff;
+            font-size: 0.85rem;
+            font-family: var(--font-sans);
+            outline: none;
+            transition: var(--transition-smooth);
+        }
+        .form-control:focus {
+            border-color: var(--gold-primary);
+            box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.25);
+        }
+        select.form-control {
+            appearance: none;
+            cursor: pointer;
+        }
+        textarea.form-control {
+            resize: vertical;
+            min-height: 90px;
+        }
+
+        .whatsapp-preview-box {
+            background: #09090d;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            padding: 1.25rem;
+            margin-top: 1.5rem;
+            text-align: left;
+        }
+        .preview-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--gold-light);
+            margin-bottom: 0.65rem;
+        }
+        .preview-text {
+            font-family: monospace;
+            font-size: 0.78rem;
+            color: #94a3b8;
+            background: #040406;
+            padding: 1rem;
+            border-radius: 8px;
+            line-height: 1.6;
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            white-space: pre-wrap;
+            word-break: break-word;
+        }
+
+        /* --- Contact Section & Studio Map --- */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2.5rem;
+            margin-top: 3rem;
+            align-items: stretch;
+        }
+        @media (min-width: 992px) {
+            .contact-grid { grid-template-columns: 5fr 7fr; }
+        }
+
+        .contact-info-card {
+            background: var(--bg-card);
+            border: 1px solid var(--gold-border);
+            border-radius: 20px;
+            padding: 2.25rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 2rem;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+        }
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+        .contact-icon-box {
+            width: 44px;
+            height: 44px;
+            border-radius: 10px;
+            background: rgba(212, 175, 55, 0.12);
+            border: 1px solid var(--gold-border);
+            color: var(--gold-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.15rem;
+            flex-shrink: 0;
+        }
+        .contact-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: var(--text-muted);
+            letter-spacing: 0.06em;
+        }
+        .contact-value {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #ffffff;
+            text-decoration: none;
+            display: block;
+            margin-top: 0.15rem;
+        }
+        .contact-value:hover {
+            color: var(--gold-light);
+        }
+        .contact-note {
+            font-size: 0.72rem;
+            color: var(--text-muted);
+        }
+
+        .map-wrapper-card {
+            background: var(--bg-card);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 20px;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+        }
+        .map-frame-box {
+            width: 100%;
+            height: 380px;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .map-frame-box iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .map-tip-box {
+            margin-top: 1rem;
+            padding: 0.85rem 1rem;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        /* --- Footer --- */
+        .site-footer {
+            background-color: #040406;
+            border-top: 1px solid rgba(212, 175, 55, 0.2);
+            padding: 4.5rem 1.5rem 2rem;
+            position: relative;
+            z-index: 10;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2.5rem;
+            margin-bottom: 3.5rem;
+        }
+        @media (min-width: 640px) {
+            .footer-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (min-width: 992px) {
+            .footer-grid { grid-template-columns: 2fr 1fr 1fr 1.5fr; }
+        }
+        .footer-col h4 {
+            font-family: var(--font-heading);
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 1.25rem;
+        }
+        .footer-links {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.65rem;
+        }
+        .footer-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.8rem;
+            transition: color 0.2s;
+        }
+        .footer-links a:hover {
+            color: var(--gold-light);
+        }
+        .footer-bottom {
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            font-size: 0.78rem;
+            color: var(--text-muted);
+        }
+        @media (min-width: 640px) {
+            .footer-bottom { flex-direction: row; }
+        }
+
+        /* --- Floating Action Buttons --- */
+        .floating-actions {
+            position: fixed;
+            bottom: 1.5rem;
+            right: 1.5rem;
+            z-index: 90;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 0.75rem;
+        }
+        .float-btn {
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.4rem;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7);
+            transition: var(--transition-smooth);
+            position: relative;
+        }
+        .float-call {
+            background: #14141c;
+            border: 1px solid var(--gold-border);
+            color: var(--gold-primary);
+            font-size: 1.15rem;
+        }
+        .float-call:hover {
+            transform: scale(1.1);
+            border-color: var(--gold-primary);
+        }
+        .float-whatsapp {
+            background: #25d366;
+            color: #fff;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.45);
+        }
+        .float-whatsapp:hover {
+            transform: scale(1.1);
+            background: #20bd5a;
+        }
+        .pulse-ring {
+            position: absolute;
+            inset: -4px;
+            border-radius: 50%;
+            border: 2px solid #25d366;
+            animation: pulseWave 2s infinite;
+            pointer-events: none;
+        }
+        @keyframes pulseWave {
+            0% { transform: scale(1); opacity: 0.8; }
+            100% { transform: scale(1.4); opacity: 0; }
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: var(--bg-dark); }
+        ::-webkit-scrollbar-thumb { background: #262633; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: var(--gold-primary); }
+    </style>
+</head>
+<body>
+
+    <!-- Ambient Golden Lighting Glows -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="ambient-glow glow-3"></div>
+
+    <!-- Top Announcement Bar -->
+    <div class="announcement-bar">
+        <div class="announcement-container">
+            <div class="announcement-badge">
+                <span class="pulse-dot"></span>
+                <span>Booking Open for Upcoming Wedding & Event Season</span>
+                <span style="color: #475569; margin: 0 4px;">|</span>
+                <span><i class="fa-solid fa-location-dot" style="color: var(--gold-primary);"></i> Multan Road, Near Polytechnic College</span>
+            </div>
+            <div class="announcement-links">
+                <a href="tel:03449170933">
+                    <i class="fa-solid fa-phone" style="color: var(--gold-primary);"></i>
+                    <span>03449170933</span>
+                </a>
+                <a href="https://wa.me/923449170933?text=Hello%20ZM%20Studio,%20I%20would%20like%20to%20inquire%20about%20your%20photography%20services." target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-whatsapp" style="color: #25d366;"></i>
+                    <span>Instant WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sticky Main Navigation Header -->
+    <header class="site-header" id="main-header">
+        <div class="nav-wrapper">
+            <!-- Brand Logo -->
+            <a href="#home" class="brand-logo">
+                <div class="brand-icon-circle">
+                    <i class="fa-solid fa-camera-retro"></i>
+                </div>
+                <div class="brand-text">
+                    <span class="brand-name">ZM Studio</span>
+                    <span class="brand-tagline">Photography & Videography</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About Us</a>
+                <a href="#services" class="nav-link">Our Services</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#why-us" class="nav-link">Why Choose Us</a>
+                <a href="#booking" class="nav-link">Book Shoot</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <!-- Desktop Actions -->
+            <div class="nav-actions">
+                <a href="#booking" class="btn btn-gold" style="padding: 0.65rem 1.4rem; font-size: 0.75rem;">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    <span>Book Your Shoot</span>
+                </a>
+                <a href="tel:03449170933" class="btn btn-outline-gold" style="padding: 0.65rem; border-radius: 50%; width: 38px; height: 38px;" title="Call ZM Studio">
+                    <i class="fa-solid fa-phone" style="font-size: 0.85rem;"></i>
+                </a>
+            </div>
+
+            <!-- Mobile Hamburger Toggle -->
+            <button class="mobile-toggle" id="mobile-menu-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <!-- Mobile Drawer Menu -->
+        <div class="mobile-menu-drawer" id="mobile-menu">
+            <a href="#home" class="mobile-link">Home</a>
+            <a href="#about" class="mobile-link">About ZM Studio</a>
+            <a href="#services" class="mobile-link">Our Services</a>
+            <a href="#portfolio" class="mobile-link">Our Portfolio</a>
+            <a href="#why-us" class="mobile-link">Why Choose Us</a>
+            <a href="#booking" class="mobile-link">Book Your Shoot</a>
+            <a href="#contact" class="mobile-link">Contact & Location</a>
+            <div style="margin-top: 1.25rem; display: flex; flex-direction: column; gap: 0.65rem;">
+                <a href="#booking" class="btn btn-gold" style="text-align: center;">Book via WhatsApp</a>
+                <a href="tel:03449170933" class="btn btn-outline-gold" style="text-align: center;"><i class="fa-solid fa-phone"></i> Call 03449170933</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ==============================================
+             SECTION 1: HOME PAGE / HERO
+        ============================================== -->
+        <section class="hero-section" id="home">
+            <div class="hero-bg">
+                <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=2000&q=85" alt="Luxury Wedding and Cinematic Photography">
+                <div class="hero-overlay"></div>
+            </div>
+
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fa-solid fa-crown" style="color: var(--gold-primary);"></i>
+                    <span>Luxury Photography & Cinematic Videography</span>
+                </div>
+
+                <h1 class="hero-title">
+                    Capturing Your <br>
+                    <span class="gold-gradient-text font-serif" style="font-style: italic; font-weight: normal;">Beautiful Moments.</span>
+                </h1>
+
+                <p class="hero-subtitle">
+                    Professional Photography & Videography Services by <strong style="color: var(--gold-light);">ZM Studio</strong>. We capture weddings, private events, dynamic portraits, and scenic outdoor shoots with unmatched artistry and timeless cinematic grace.
+                </p>
+
+                <div class="hero-btns">
+                    <a href="#booking" class="btn btn-gold">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <span>Book Your Shoot</span>
+                    </a>
+                    <a href="#portfolio" class="btn btn-outline-gold">
+                        <i class="fa-solid fa-images" style="color: var(--gold-primary);"></i>
+                        <span>View Portfolio</span>
+                    </a>
+                </div>
+
+                <div class="hero-features-bar">
+                    <div class="hero-feature-item">
+                        <div class="hero-feature-icon"><i class="fa-solid fa-film"></i></div>
+                        <div>
+                            <div class="hero-feature-title">Cinematic 4K</div>
+                            <div class="hero-feature-sub">Color Graded Reels</div>
+                        </div>
+                    </div>
+                    <div class="hero-feature-item">
+                        <div class="hero-feature-icon"><i class="fa-solid fa-heart"></i></div>
+                        <div>
+                            <div class="hero-feature-title">Weddings & Events</div>
+                            <div class="hero-feature-sub">Complete Coverage</div>
+                        </div>
+                    </div>
+                    <div class="hero-feature-item">
+                        <div class="hero-feature-icon"><i class="fa-solid fa-camera"></i></div>
+                        <div>
+                            <div class="hero-feature-title">Creative Shoots</div>
+                            <div class="hero-feature-sub">Portraits & Outdoors</div>
+                        </div>
+                    </div>
+                    <div class="hero-feature-item">
+                        <div class="hero-feature-icon"><i class="fa-brands fa-whatsapp" style="color: #25d366;"></i></div>
+                        <div>
+                            <div class="hero-feature-title">Easy Booking</div>
+                            <div class="hero-feature-sub">Direct on WhatsApp</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ==============================================
+             SECTION 2: ABOUT US
+        ============================================== -->
+        <section class="section-padding" id="about">
+            <div class="container">
+                <div class="about-grid">
+                    
+                    <!-- Left: Photographer Visual Showcase -->
+                    <div class="about-image-wrapper">
+                        <div class="about-image-border"></div>
+                        <div class="about-image-card">
+                            <img src="https://images.unsplash.com/photo-1554048612-b6a482bc67e5?auto=format&fit=crop&w=1000&q=80" alt="ZM Studio - Professional Photographer">
+                            
+                            <!-- Floating Badge -->
+                            <div class="about-floating-badge">
+                                <div class="badge-header">
+                                    <div class="badge-icon">
+                                        <i class="fa-solid fa-award"></i>
+                                    </div>
+                                    <div>
+                                        <div class="badge-title">ZM Studio</div>
+                                        <div class="badge-sub">Lead Photographer & Cinematographer</div>
+                                    </div>
+                                </div>
+                                <div class="badge-footer">
+                                    <span><i class="fa-solid fa-map-pin" style="color: var(--gold-primary);"></i> Multan Road Studio</span>
+                                    <span><i class="fa-solid fa-bolt" style="color: var(--gold-primary);"></i> High-End Gear</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Story & Philosophy -->
+                    <div class="about-text-content">
+                        <div>
+                            <span class="section-eyebrow">Meet The Artist</span>
+                            <h2 class="section-title">
+                                Crafting Visual Stories With <br>
+                                <span class="gold-gradient-text font-serif" style="font-style: italic; font-weight: normal;">Passion, Precision & Artistry.</span>
+                            </h2>
+                        </div>
+
+                        <p>
+                            Welcome to <strong style="color: #fff;">ZM Studio Photography & Videography</strong>. Based conveniently at <strong style="color: var(--gold-light);">Multan Road, Near Polytechnic College</strong>, our studio is dedicated to transforming once-in-a-lifetime events, heartfelt family celebrations, and personal portrait sessions into timeless works of art.
+                        </p>
+
+                        <p>
+                            We believe great photography is about understanding genuine emotion, mastering light and shadow, and creating an effortless environment where you feel confident and authentic. Whether documenting the grandeur of a wedding celebration or filming cinematic highlight reels, we deliver high-definition clarity, exquisite color tones, and personalized attention to detail.
+                        </p>
+
+                        <div class="about-cards-grid">
+                            <div class="about-mini-card">
+                                <div class="about-mini-title">
+                                    <i class="fa-solid fa-film"></i>
+                                    <span>Cinematic Storytelling</span>
+                                </div>
+                                <div class="about-mini-desc">
+                                    Dynamic gimbal movements, clean audio capture, and master color grading for full video production.
+                                </div>
+                            </div>
+                            <div class="about-mini-card">
+                                <div class="about-mini-title">
+                                    <i class="fa-solid fa-sparkles"></i>
+                                    <span>Candid & Formal Mastery</span>
+                                </div>
+                                <div class="about-mini-desc">
+                                    From spontaneous unscripted smiles to meticulously directed editorial poses and couple shoots.
+                                </div>
+                            </div>
+                            <div class="about-mini-card">
+                                <div class="about-mini-title">
+                                    <i class="fa-solid fa-camera"></i>
+                                    <span>High-End Equipment</span>
+                                </div>
+                                <div class="about-mini-desc">
+                                    State-of-the-art camera sensors, prime portrait lenses, lighting rigs, and drone capabilities.
+                                </div>
+                            </div>
+                            <div class="about-mini-card">
+                                <div class="about-mini-title">
+                                    <i class="fa-solid fa-comments"></i>
+                                    <span>Personalized Service</span>
+                                </div>
+                                <div class="about-mini-desc">
+                                    Direct consultation with ZM Studio to tailor your shoot schedule, themes, and delivery timelines.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="margin-top: 1rem; display: flex; flex-wrap: wrap; gap: 1rem;">
+                            <a href="#services" class="btn btn-gold">Explore Our Services</a>
+                            <a href="https://wa.me/923449170933?text=Hi%20ZM Studio,%20I%20would%20like%20to%20discuss%20a%20photoshoot." target="_blank" rel="noopener noreferrer" class="btn btn-outline-gold">
+                                <i class="fa-brands fa-whatsapp" style="color: #25d366;"></i>
+                                <span>Chat with ZM Studio</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ==============================================
+             SECTION 3: OUR SERVICES (ALL 6 SERVICES)
+        ============================================== -->
+        <section class="section-padding" id="services" style="background-color: rgba(16, 16, 22, 0.5);">
+            <div class="container text-center">
+                <span class="section-eyebrow">What We Offer</span>
+                <h2 class="section-title">Our Specialized Services</h2>
+                <p class="section-desc">
+                    Every celebration is unique. Explore our comprehensive photography and videography solutions customized to your vision.
+                </p>
+
+                <div class="services-grid text-left">
+                    
+                    <!-- Service 1: PHOTOGRAPHY -->
+                    <div class="service-card">
+                        <div class="service-image-box">
+                            <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=800&q=80" alt="Professional Photography">
+                            <span class="service-badge">Core Specialty</span>
+                        </div>
+                        <div class="service-body">
+                            <div>
+                                <div class="service-header-row">
+                                    <h3 class="service-title">Photography</h3>
+                                    <div class="service-icon-circle"><i class="fa-solid fa-camera"></i></div>
+                                </div>
+                                <p class="service-description">
+                                    High-resolution capture with artistic framing and color treatment. We transform fleeting seconds into unforgettable heirlooms.
+                                </p>
+                                <ul class="service-list">
+                                    <li><i class="fa-solid fa-circle-check"></i> Professional photography</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> High-quality pictures</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Creative photoshoots</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Memorable photography</li>
+                                </ul>
+                            </div>
+                            <button class="service-book-btn" onclick="selectServiceAndScroll('Photography')">
+                                <i class="fa-solid fa-calendar-check"></i> Book This Shoot
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Service 2: VIDEOGRAPHY -->
+                    <div class="service-card">
+                        <div class="service-image-box">
+                            <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=800&q=80" alt="Cinematic Videography">
+                            <span class="service-badge">Cinematic 4K</span>
+                        </div>
+                        <div class="service-body">
+                            <div>
+                                <div class="service-header-row">
+                                    <h3 class="service-title">Videography</h3>
+                                    <div class="service-icon-circle"><i class="fa-solid fa-video"></i></div>
+                                </div>
+                                <p class="service-description">
+                                    Cinema-grade video capture using high-end stabilizers, crisp audio recording, and movie-grade post-production editing.
+                                </p>
+                                <ul class="service-list">
+                                    <li><i class="fa-solid fa-circle-check"></i> Professional video recording</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Event video coverage</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Video editing & color grading</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Cinematic video production</li>
+                                </ul>
+                            </div>
+                            <button class="service-book-btn" onclick="selectServiceAndScroll('Videography')">
+                                <i class="fa-solid fa-calendar-check"></i> Book This Shoot
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Service 3: WEDDING SHOOT -->
+                    <div class="service-card featured">
+                        <div class="service-image-box">
+                            <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=800&q=80" alt="Royal Wedding Shoot">
+                            <span class="service-badge gold">Most Popular</span>
+                        </div>
+                        <div class="service-body">
+                            <div>
+                                <div class="service-header-row">
+                                    <h3 class="service-title">Wedding Shoot</h3>
+                                    <div class="service-icon-circle"><i class="fa-solid fa-ring"></i></div>
+                                </div>
+                                <p class="service-description">
+                                    Grand Barat, Walima, Mehndi, and bridal portraits. Capturing royal emotions and familial bonds with dignity and beauty.
+                                </p>
+                                <ul class="service-list">
+                                    <li><i class="fa-solid fa-circle-check"></i> Wedding photography</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Bride and groom photoshoots</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Wedding videography</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Wedding albums</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Special wedding moments</li>
+                                </ul>
+                            </div>
+                            <button class="service-book-btn" onclick="selectServiceAndScroll('Wedding Shoot')">
+                                <i class="fa-solid fa-calendar-check"></i> Book Wedding Shoot
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Service 4: EVENTS & PARTIES -->
+                    <div class="service-card">
+                        <div class="service-image-box">
+                            <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=800&q=80" alt="Events and Parties">
+                            <span class="service-badge">Celebrations</span>
+                        </div>
+                        <div class="service-body">
+                            <div>
+                                <div class="service-header-row">
+                                    <h3 class="service-title">Events & Parties</h3>
+                                    <div class="service-icon-circle"><i class="fa-solid fa-champagne-glasses"></i></div>
+                                </div>
+                                <p class="service-description">
+                                    From energetic birthday bashes to formal corporate galas and warm family reunions, we capture every celebration with vibrance.
+                                </p>
+                                <ul class="service-list">
+                                    <li><i class="fa-solid fa-circle-check"></i> Birthday photography</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Family functions</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Special event coverage</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Party photography</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Event videography</li>
+                                </ul>
+                            </div>
+                            <button class="service-book-btn" onclick="selectServiceAndScroll('Events & Parties')">
+                                <i class="fa-solid fa-calendar-check"></i> Book This Shoot
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Service 5: PORTRAIT SHOOT -->
+                    <div class="service-card">
+                        <div class="service-image-box">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80" alt="Portrait Shoot">
+                            <span class="service-badge">Studio & Outdoor</span>
+                        </div>
+                        <div class="service-body">
+                            <div>
+                                <div class="service-header-row">
+                                    <h3 class="service-title">Portrait Shoot</h3>
+                                    <div class="service-icon-circle"><i class="fa-solid fa-user"></i></div>
+                                </div>
+                                <p class="service-description">
+                                    Bespoke individual portraits, modeling portfolios, and executive headshots with precise studio lighting that flatters and empowers.
+                                </p>
+                                <ul class="service-list">
+                                    <li><i class="fa-solid fa-circle-check"></i> Individual photoshoots</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Professional portraits</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Creative portrait photography</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Personal portfolio photography</li>
+                                </ul>
+                            </div>
+                            <button class="service-book-btn" onclick="selectServiceAndScroll('Portrait Shoot')">
+                                <i class="fa-solid fa-calendar-check"></i> Book This Shoot
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Service 6: OUTDOOR SHOOT -->
+                    <div class="service-card">
+                        <div class="service-image-box">
+                            <img src="https://images.unsplash.com/photo-1509967419530-da38b4704bc6?auto=format&fit=crop&w=800&q=80" alt="Outdoor Shoot">
+                            <span class="service-badge">Golden Hour</span>
+                        </div>
+                        <div class="service-body">
+                            <div>
+                                <div class="service-header-row">
+                                    <h3 class="service-title">Outdoor Shoot</h3>
+                                    <div class="service-icon-circle"><i class="fa-solid fa-tree"></i></div>
+                                </div>
+                                <p class="service-description">
+                                    Lush landscapes, architectural backdrops, and sunset glow sessions creating scenic, emotive, and romantic visual narratives.
+                                </p>
+                                <ul class="service-list">
+                                    <li><i class="fa-solid fa-circle-check"></i> Outdoor photography</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Natural location photoshoots</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Couple outdoor shoots</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Creative outdoor photography</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Beautiful scenic photography</li>
+                                </ul>
+                            </div>
+                            <button class="service-book-btn" onclick="selectServiceAndScroll('Outdoor Shoot')">
+                                <i class="fa-solid fa-calendar-check"></i> Book This Shoot
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ==============================================
+             SECTION 4: OUR PORTFOLIO (WITH LIGHTBOX)
+        ============================================== -->
+        <section class="section-padding" id="portfolio">
+            <div class="container text-center">
+                <span class="section-eyebrow">Our Work</span>
+                <h2 class="section-title">Our Portfolio Gallery</h2>
+                <p class="section-desc">
+                    Browse through our sample photography and videography collections. Click any image to view it in full-resolution lightbox mode.
+                </p>
+
+                <!-- Filter Buttons -->
+                <div class="filter-buttons-wrapper">
+                    <button class="filter-btn active" data-filter="all">All Works</button>
+                    <button class="filter-btn" data-filter="wedding">Wedding Shoot</button>
+                    <button class="filter-btn" data-filter="events">Events & Parties</button>
+                    <button class="filter-btn" data-filter="portrait">Portrait Shoot</button>
+                    <button class="filter-btn" data-filter="outdoor">Outdoor Shoot</button>
+                    <button class="filter-btn" data-filter="videography">Videography</button>
+                </div>
+
+                <!-- Pre-Rendered Portfolio Grid (100% Reliable & Immediate) -->
+                <div class="portfolio-grid text-left" id="portfolio-grid">
+                    
+                    <!-- Item 1: Wedding -->
+                    <div class="portfolio-card" data-category="wedding" onclick="openPortfolioLightbox(0)">
+                        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=85" alt="Royal Barat Ceremony" loading="lazy">
+                        <div class="portfolio-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-tag">Wedding Shoot</span>
+                            <h3 class="portfolio-title">Royal Barat Ceremony</h3>
+                            <p class="portfolio-desc">Capturing the emotion, royal attire, and unforgettable entrance at a grand Barat celebration.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 2: Wedding -->
+                    <div class="portfolio-card" data-category="wedding" onclick="openPortfolioLightbox(1)">
+                        <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=1200&q=85" alt="Bride and Groom Sunset Portrait" loading="lazy">
+                        <div class="portfolio-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-tag">Wedding Shoot</span>
+                            <h3 class="portfolio-title">Bride & Groom Sunset Portrait</h3>
+                            <p class="portfolio-desc">Intimate golden-hour bridal couple portraits highlighting delicate jewelry and embroidery.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 3: Videography -->
+                    <div class="portfolio-card" data-category="videography" onclick="openPortfolioLightbox(2)">
+                        <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=1200&q=85" alt="Cinematic 4K Rig and Production" loading="lazy">
+                        <div class="portfolio-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-tag">Videography</span>
+                            <h3 class="portfolio-title">Cinematic 4K Rig & Production</h3>
+                            <p class="portfolio-desc">High-end cinema cameras, stabilizers, and prime lenses used for professional film-quality storytelling.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 4: Events -->
+                    <div class="portfolio-card" data-category="events" onclick="openPortfolioLightbox(3)">
+                        <img src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&w=1200&q=85" alt="Vibrant Mehndi Celebration" loading="lazy">
+                        <div class="portfolio-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-tag">Events & Parties</span>
+                            <h3 class="portfolio-title">Vibrant Mehndi Celebration</h3>
+                            <p class="portfolio-desc">Joyful traditional dance performances, vibrant colors, and candid guest laughter captured live.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 5: Portrait -->
+                    <div class="portfolio-card" data-category="portrait" onclick="openPortfolioLightbox(4)">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1200&q=85" alt="Studio Fashion and Personal Portrait" loading="lazy">
+                        <div class="portfolio-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-tag">Portrait Shoot</span>
+                            <h3 class="portfolio-title">Studio Fashion & Portrait</h3>
+                            <p class="portfolio-desc">Artistic studio lighting accentuating facial features and authentic personal expression.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 6: Outdoor -->
+                    <div class="portfolio-card" data-category="outdoor" onclick="openPortfolioLightbox(5)">
+                        <img src="https://images.unsplash.com/photo-1509967419530-da38b4704bc6?auto=format&fit=crop&w=1200&q=85" alt="Scenic Golden Hour Landscape Shoot" loading="lazy">
+                        <div class="portfolio-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-tag">Outdoor Shoot</span>
+                            <h3 class="portfolio-title">Scenic Golden Hour Shoot</h3>
+                            <p class="portfolio-desc">Stunning outdoor compositions using natural sun flare and natural botanical surroundings.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 7: Wedding -->
+                    <div class="portfolio-card" data-category="wedding" onclick="openPortfolioLightbox(6)">
+                        <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1200&q=85" alt="Walima Stage Elegance" loading="lazy">
+                        <div class="portfolio-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-tag">Wedding Shoot</span>
+                            <h3 class="portfolio-title">Walima Stage Elegance</h3>
+                            <p class="portfolio-desc">Grand reception hall decor, warm stage illumination, and couple centerpiece photography.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 8: Videography -->
+                    <div class="portfolio-card" data-category="videography" onclick="openPortfolioLightbox(7)">
+                        <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=1200&q=85" alt="Dynamic Gimbal and Event Videography" loading="lazy">
+                        <div class="portfolio-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-tag">Videography</span>
+                            <h3 class="portfolio-title">Dynamic Gimbal Coverage</h3>
+                            <p class="portfolio-desc">Fluid camera movements capturing grand hall arrivals and bride & groom slow-motion cinematic walks.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 9: Events -->
+                    <div class="portfolio-card" data-category="events" onclick="openPortfolioLightbox(8)">
+                        <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1200&q=85" alt="Milestone Birthday and Party Bash" loading="lazy">
+                        <div class="portfolio-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-tag">Events & Parties</span>
+                            <h3 class="portfolio-title">Milestone Birthday & Party</h3>
+                            <p class="portfolio-desc">High-energy event atmosphere, cake cutting moments, and memorable family group portraits.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 10: Portrait -->
+                    <div class="portfolio-card" data-category="portrait" onclick="openPortfolioLightbox(9)">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1200&q=85" alt="Executive and Modeling Headshot" loading="lazy">
+                        <div class="portfolio-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-tag">Portrait Shoot</span>
+                            <h3 class="portfolio-title">Executive & Model Headshot</h3>
+                            <p class="portfolio-desc">Clean, authoritative, and charismatic headshot photography for portfolios and corporate branding.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 11: Outdoor -->
+                    <div class="portfolio-card" data-category="outdoor" onclick="openPortfolioLightbox(10)">
+                        <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=1200&q=85" alt="Romantic Outdoor Pre-Wedding Shoot" loading="lazy">
+                        <div class="portfolio-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-tag">Outdoor Shoot</span>
+                            <h3 class="portfolio-title">Romantic Pre-Wedding Shoot</h3>
+                            <p class="portfolio-desc">Romantic outdoor couple photography capturing serene natural moments in scenic park gardens.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 12: Wedding -->
+                    <div class="portfolio-card" data-category="wedding" onclick="openPortfolioLightbox(11)">
+                        <img src="https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&w=1200&q=85" alt="Creative Lens Framing and Details" loading="lazy">
+                        <div class="portfolio-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-tag">Wedding Shoot</span>
+                            <h3 class="portfolio-title">Creative Details & Rings</h3>
+                            <p class="portfolio-desc">Macro focus on wedding rings, heirloom jewelry, and delicate bridal henna artistry.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div style="margin-top: 3rem;">
+                    <a href="#booking" class="btn btn-outline-gold">
+                        <span>Book a Shoot in this Style</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ==============================================
+             SECTION 5: WHY CHOOSE US
+        ============================================== -->
+        <section class="section-padding" id="why-us" style="background-color: rgba(16, 16, 22, 0.4);">
+            <div class="container text-center">
+                <span class="section-eyebrow">Our Excellence</span>
+                <h2 class="section-title">Why Choose Us</h2>
+                <p class="section-desc">
+                    Dedicated to delivering unmatched visual craftsmanship, seamless collaboration, and timeless memories you will treasure forever.
+                </p>
+
+                <div class="why-grid text-left">
+                    
+                    <!-- Feature 1 -->
+                    <div class="why-card">
+                        <div class="why-icon-box"><i class="fa-solid fa-camera-retro"></i></div>
+                        <h3 class="why-title">Professional Photography Style</h3>
+                        <p class="why-desc">A refined blend of editorial elegance and emotional candid coverage. We capture the authentic spirit of people without stiff or forced poses.</p>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="why-card">
+                        <div class="why-icon-box"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                        <h3 class="why-title">Creative Photography</h3>
+                        <p class="why-desc">Artistic composition, dramatic natural backlighting, cinematic angles, and thoughtful framing that elevate everyday scenes into striking visual art.</p>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="why-card">
+                        <div class="why-icon-box"><i class="fa-solid fa-sliders"></i></div>
+                        <h3 class="why-title">High-Quality Pictures</h3>
+                        <p class="why-desc">Captured on professional full-frame sensors and prime lenses, paired with detailed color calibration suitable for large-format physical canvas prints.</p>
+                    </div>
+
+                    <!-- Feature 4 -->
+                    <div class="why-card">
+                        <div class="why-icon-box"><i class="fa-solid fa-heart"></i></div>
+                        <h3 class="why-title">Beautiful Memories</h3>
+                        <p class="why-desc">Moments fade, but memories should last forever. We preserve genuine laughter, happy tears, and heartfelt connections for you and future generations.</p>
+                    </div>
+
+                    <!-- Feature 5 -->
+                    <div class="why-card">
+                        <div class="why-icon-box"><i class="fa-solid fa-handshake-angle"></i></div>
+                        <h3 class="why-title">Friendly Customer Service</h3>
+                        <p class="why-desc">A warm, approachable, and respectful experience from initial consultation to final delivery. We make sure you feel entirely comfortable during shoots.</p>
+                    </div>
+
+                    <!-- Feature 6 -->
+                    <div class="why-card">
+                        <div class="why-icon-box"><i class="fa-solid fa-magnifying-glass"></i></div>
+                        <h3 class="why-title">Attention to Detail</h3>
+                        <p class="why-desc">From jewelry close-ups and bridal dress drape to background clutter elimination and prompt delivery, no detail is overlooked in our workflow.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ==============================================
+             SECTION 6: BOOK YOUR SHOOT
+        ============================================== -->
+        <section class="section-padding" id="booking">
+            <div class="container text-center">
+                <span class="section-eyebrow">Reserve Your Date</span>
+                <h2 class="section-title">Book Your Shoot</h2>
+                <p class="section-desc">
+                    Fill in your event details below. Click the WhatsApp button to instantly prepare your booking summary and connect directly with <strong style="color: var(--gold-light);">ZM Studio</strong>.
+                </p>
+
+                <div class="booking-card">
+                    <form id="booking-form" onsubmit="handleBookingSubmit(event)">
+                        <div class="form-grid">
+                            
+                            <!-- Client Name -->
+                            <div class="form-group">
+                                <label class="form-label" for="client-name">Client Name <span>*</span></label>
+                                <input type="text" id="client-name" class="form-control" placeholder="e.g. Muhammad Ali" required>
+                            </div>
+
+                            <!-- Contact Number -->
+                            <div class="form-group">
+                                <label class="form-label" for="client-phone">Contact / WhatsApp <span>*</span></label>
+                                <input type="tel" id="client-phone" class="form-control" placeholder="03XXXXXXXXX" required>
+                            </div>
+
+                            <!-- Select Service -->
+                            <div class="form-group">
+                                <label class="form-label" for="shoot-service">Select Service <span>*</span></label>
+                                <select id="shoot-service" class="form-control" required>
+                                    <option value="" disabled selected>Choose a photoshoot service...</option>
+                                    <option value="Wedding Shoot">Wedding Shoot (Barat / Walima / Mehndi)</option>
+                                    <option value="Photography">Photography (High-Quality Shoot)</option>
+                                    <option value="Videography">Videography (Cinematic 4K)</option>
+                                    <option value="Events & Parties">Events & Parties (Birthday / Anniversary)</option>
+                                    <option value="Portrait Shoot">Portrait Shoot (Studio / Personal)</option>
+                                    <option value="Outdoor Shoot">Outdoor Shoot (Scenic / Couple)</option>
+                                    <option value="Custom Complete Package">Custom Complete Package</option>
+                                </select>
+                            </div>
+
+                            <!-- Event Date -->
+                            <div class="form-group">
+                                <label class="form-label" for="event-date">Event Date <span>*</span></label>
+                                <input type="date" id="event-date" class="form-control" required>
+                            </div>
+
+                            <!-- Shoot Location -->
+                            <div class="form-group full-width">
+                                <label class="form-label" for="event-location">Shoot Location / Venue <span>*</span></label>
+                                <input type="text" id="event-location" class="form-control" placeholder="e.g. Marquee / Hall name, City or Outdoor location" required>
+                            </div>
+
+                            <!-- Additional Message -->
+                            <div class="form-group full-width">
+                                <label class="form-label" for="client-message">Additional Message / Requirements (Optional)</label>
+                                <textarea id="client-message" class="form-control" placeholder="Describe your timings, number of days, special requests, or questions..."></textarea>
+                            </div>
+
+                        </div>
+
+                        <!-- Live WhatsApp Message Preview -->
+                        <div class="whatsapp-preview-box">
+                            <div class="preview-header">
+                                <span><i class="fa-brands fa-whatsapp" style="color: #25d366;"></i> Live WhatsApp Message Preview</span>
+                                <span style="color: var(--text-muted); font-weight: normal;">1-Click Instant Dispatch</span>
+                            </div>
+                            <div class="preview-text" id="whatsapp-preview-box">Fill the form above to see your customized WhatsApp booking text here...</div>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div style="margin-top: 2rem; display: flex; flex-direction: column; gap: 1rem; align-items: center;">
+                            <button type="submit" class="btn btn-gold" style="width: 100%; max-width: 450px; padding: 1.1rem;">
+                                <i class="fa-brands fa-whatsapp" style="font-size: 1.25rem;"></i>
+                                <span>Book Now via WhatsApp</span>
+                            </button>
+                            <a href="tel:03449170933" class="btn btn-outline-gold" style="width: 100%; max-width: 450px;">
+                                <i class="fa-solid fa-phone"></i>
+                                <span>Direct Call: 03449170933</span>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ==============================================
+             SECTION 7: CONTACT US & STUDIO LOCATION
+        ============================================== -->
+        <section class="section-padding" id="contact" style="background-color: rgba(16, 16, 22, 0.6);">
+            <div class="container text-center">
+                <span class="section-eyebrow">Get In Touch</span>
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-desc">
+                    Have an inquiry or wish to visit our studio? We are always glad to assist you.
+                </p>
+
+                <div class="contact-grid text-left">
+                    
+                    <!-- Left: Studio Details Card -->
+                    <div class="contact-info-card">
+                        <div>
+                            <span style="font-size: 0.75rem; text-transform: uppercase; color: var(--gold-primary); font-weight: 700; letter-spacing: 0.1em;">Official Studio</span>
+                            <h3 style="font-family: var(--font-heading); font-size: 1.75rem; font-weight: 700; color: #fff; margin-top: 0.25rem;">ZM Studio</h3>
+                            <p style="font-size: 0.8rem; color: var(--text-muted);">Photography & Videography Studio</p>
+                        </div>
+
+                        <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                            <!-- Phone -->
+                            <div class="contact-item">
+                                <div class="contact-icon-box"><i class="fa-solid fa-phone"></i></div>
+                                <div>
+                                    <div class="contact-label">Phone & WhatsApp</div>
+                                    <a href="tel:03449170933" class="contact-value">03449170933</a>
+                                    <div class="contact-note">Available for calls & event inquiries</div>
+                                </div>
+                            </div>
+
+                            <!-- Location -->
+                            <div class="contact-item">
+                                <div class="contact-icon-box"><i class="fa-solid fa-location-dot"></i></div>
+                                <div>
+                                    <div class="contact-label">Studio Location</div>
+                                    <div class="contact-value">Multan Road, Near Polytechnic College</div>
+                                    <div class="contact-note">Easily accessible road access</div>
+                                </div>
+                            </div>
+
+                            <!-- Working Hours -->
+                            <div class="contact-item">
+                                <div class="contact-icon-box"><i class="fa-solid fa-clock"></i></div>
+                                <div>
+                                    <div class="contact-label">Working Hours</div>
+                                    <div class="contact-value">Mon – Sun: 10:00 AM – 10:00 PM</div>
+                                    <div class="contact-note">Event coverage 24/7 as scheduled</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                            <a href="https://wa.me/923449170933?text=Hello%20ZM%20Studio,%20I%20would%20like%20to%20discuss%20a%20shoot." target="_blank" rel="noopener noreferrer" class="btn" style="background: #25d366; color: #fff; font-size: 0.75rem; padding: 0.85rem;">
+                                <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                            </a>
+                            <a href="tel:03449170933" class="btn btn-gold" style="font-size: 0.75rem; padding: 0.85rem;">
+                                <i class="fa-solid fa-phone"></i> Call Now
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right: Google Maps Integration -->
+                    <div class="map-wrapper-card">
+                        <div style="display: flex; justify-content: space-between; align-items: center; padding: 0.5rem 0.5rem 0.75rem;">
+                            <span style="font-size: 0.8rem; font-weight: 700; color: #fff;"><i class="fa-solid fa-map-location-dot" style="color: var(--gold-primary); margin-right: 6px;"></i> Interactive Location Map</span>
+                            <span style="font-size: 0.75rem; color: var(--text-muted);">Multan Road, Near Polytechnic College</span>
+                        </div>
+                        <div class="map-frame-box">
+                            <iframe 
+                                id="google-maps-frame"
+                                title="ZM Studio Photography Studio Location Map" 
+                                src="https://maps.google.com/maps?q=Polytechnic%20College%20Multan%20Road&t=&z=14&ie=UTF8&iwloc=&output=embed" 
+                                loading="lazy" 
+                                allowfullscreen
+                            ></iframe>
+                        </div>
+                        <div class="map-tip-box">
+                            <i class="fa-solid fa-circle-info" style="color: var(--gold-primary); font-size: 1rem;"></i>
+                            <span>The map is centered on Multan Road near Polytechnic College. Coordinates can be updated anytime in <code style="color: var(--gold-light);">index.html</code>.</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- ==============================================
+         FOOTER
+    ============================================== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                
+                <!-- Col 1: Bio -->
+                <div class="footer-col">
+                    <div class="brand-logo" style="margin-bottom: 1rem;">
+                        <div class="brand-icon-circle"><i class="fa-solid fa-camera-retro"></i></div>
+                        <div class="brand-text">
+                            <span class="brand-name">ZM Studio</span>
+                            <span class="brand-tagline">Photography & Videography</span>
+                        </div>
+                    </div>
+                    <p style="font-size: 0.8rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1rem;">
+                        Capturing your beautiful moments. Providing professional photography, 4K cinematic videography, weddings, events, portrait, and outdoor shoot services.
+                    </p>
+                    <div style="font-size: 0.8rem; color: var(--gold-light); font-weight: 600;">
+                        Owner: ZM Studio
+                    </div>
+                </div>
+
+                <!-- Col 2: Navigation -->
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About ZM Studio</a></li>
+                        <li><a href="#services">Our Services</a></li>
+                        <li><a href="#portfolio">Portfolio Gallery</a></li>
+                        <li><a href="#why-us">Why Choose Us</a></li>
+                        <li><a href="#booking">Book Shoot Form</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Services -->
+                <div class="footer-col">
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Wedding Shoot</a></li>
+                        <li><a href="#services">Photography</a></li>
+                        <li><a href="#services">Videography</a></li>
+                        <li><a href="#services">Events & Parties</a></li>
+                        <li><a href="#services">Portrait Shoot</a></li>
+                        <li><a href="#services">Outdoor Shoot</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Contact -->
+                <div class="footer-col">
+                    <h4>Studio & Bookings</h4>
+                    <ul class="footer-links">
+                        <li style="color: var(--text-muted); font-size: 0.8rem;">
+                            <i class="fa-solid fa-location-dot" style="color: var(--gold-primary); margin-right: 6px;"></i> Multan Road, Near Polytechnic College
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone" style="color: var(--gold-primary); margin-right: 6px;"></i> <a href="tel:03449170933">03449170933</a>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-whatsapp" style="color: #25d366; margin-right: 6px;"></i> <a href="https://wa.me/923449170933" target="_blank" rel="noopener noreferrer">03449170933</a>
+                        </li>
+                    </ul>
+                    <div style="margin-top: 1.25rem;">
+                        <a href="#booking" class="btn btn-gold" style="font-size: 0.7rem; padding: 0.6rem 1.2rem;">Book on WhatsApp</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <div>&copy; <span id="current-year">2026</span> <strong>ZM Studio Photography & Videography</strong>. All Rights Reserved.</div>
+                <div><a href="#home" style="color: var(--text-muted); text-decoration: none; font-size: 0.75rem;"><i class="fa-solid fa-chevron-up" style="color: var(--gold-primary); margin-right: 4px;"></i> Back to Top</a></div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- ==============================================
+         LIGHTBOX MODAL
+    ============================================== -->
+    <div class="lightbox-modal" id="lightbox-modal" role="dialog" aria-modal="true">
+        <button class="lightbox-close-btn" id="lightbox-close" aria-label="Close Lightbox">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <button class="lightbox-nav-btn lightbox-prev" id="lightbox-prev" aria-label="Previous Image">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button class="lightbox-nav-btn lightbox-next" id="lightbox-next" aria-label="Next Image">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+        <div class="lightbox-content-box">
+            <div class="lightbox-image-holder">
+                <img id="lightbox-img" src="" alt="Portfolio Showcase">
+            </div>
+            <div class="lightbox-info-row">
+                <span class="portfolio-tag" id="lightbox-category">Category</span>
+                <span style="font-size: 0.75rem; color: var(--text-muted); font-family: monospace;" id="lightbox-counter">1 / 12</span>
+            </div>
+            <h3 class="lightbox-title" id="lightbox-title">Title</h3>
+            <p class="lightbox-desc" id="lightbox-desc">Description</p>
+            <button class="btn btn-gold" style="font-size: 0.75rem; padding: 0.6rem 1.4rem;" onclick="bookFromLightbox()">
+                Book Shoot Like This
+            </button>
+        </div>
+    </div>
+
+
+    <!-- ==============================================
+         FLOATING ACTION BUTTONS (CALL & WHATSAPP)
+    ============================================== -->
+    <div class="floating-actions">
+        <!-- Call -->
+        <a href="tel:03449170933" class="float-btn float-call" title="Call 03449170933" aria-label="Call 03449170933">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+        <!-- WhatsApp -->
+        <a href="https://wa.me/923449170933?text=Hello%20ZM%20Studio,%20I%20would%20like%20to%20book%20a%20photoshoot%20or%20videography%20session." target="_blank" rel="noopener noreferrer" class="float-btn float-whatsapp" title="Chat on WhatsApp" aria-label="Chat on WhatsApp">
+            <span class="pulse-ring"></span>
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+
+
+    <!-- ==============================================
+         SELF-CONTAINED CLIENT SCRIPT
+    ============================================== -->
+    <script>
+        // Studio Config
+        const siteConfig = {
+            ownerName: "ZM Studio",
+            whatsappNumber: "923449170933",
+            phone: "03449170933"
+        };
+
+        // Curated Portfolio Data
+        const portfolioItems = [
+            {
+                title: "Royal Barat Ceremony",
+                category: "wedding",
+                categoryLabel: "Wedding Shoot",
+                image: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=85",
+                desc: "Capturing the emotion, royal attire, and unforgettable entrance at a grand Barat celebration."
+            },
+            {
+                title: "Bride & Groom Sunset Portrait",
+                category: "wedding",
+                categoryLabel: "Wedding Shoot",
+                image: "https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=1200&q=85",
+                desc: "Intimate golden-hour bridal couple portraits highlighting delicate jewelry and embroidery."
+            },
+            {
+                title: "Cinematic 4K Rig & Production",
+                category: "videography",
+                categoryLabel: "Videography",
+                image: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=1200&q=85",
+                desc: "High-end cinema cameras, stabilizers, and prime lenses used for professional film-quality storytelling."
+            },
+            {
+                title: "Vibrant Mehndi Celebration",
+                category: "events",
+                categoryLabel: "Events & Parties",
+                image: "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&w=1200&q=85",
+                desc: "Joyful traditional dance performances, vibrant colors, and candid guest laughter captured live."
+            },
+            {
+                title: "Studio Fashion & Personal Portrait",
+                category: "portrait",
+                categoryLabel: "Portrait Shoot",
+                image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1200&q=85",
+                desc: "Artistic studio lighting accentuating facial features and authentic personal expression."
+            },
+            {
+                title: "Scenic Golden Hour Landscape Shoot",
+                category: "outdoor",
+                categoryLabel: "Outdoor Shoot",
+                image: "https://images.unsplash.com/photo-1509967419530-da38b4704bc6?auto=format&fit=crop&w=1200&q=85",
+                desc: "Stunning outdoor compositions using natural sun flare and natural botanical surroundings."
+            },
+            {
+                title: "Walima Stage Elegance",
+                category: "wedding",
+                categoryLabel: "Wedding Shoot",
+                image: "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1200&q=85",
+                desc: "Grand reception hall decor, warm stage illumination, and couple centerpiece photography."
+            },
+            {
+                title: "Dynamic Gimbal & Event Videography",
+                category: "videography",
+                categoryLabel: "Videography",
+                image: "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=1200&q=85",
+                desc: "Fluid camera movements capturing grand hall arrivals and bride & groom slow-motion cinematic walks."
+            },
+            {
+                title: "Milestone Birthday & Party Bash",
+                category: "events",
+                categoryLabel: "Events & Parties",
+                image: "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1200&q=85",
+                desc: "High-energy event atmosphere, cake cutting moments, and memorable family group portraits."
+            },
+            {
+                title: "Executive & Modeling Headshot",
+                category: "portrait",
+                categoryLabel: "Portrait Shoot",
+                image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1200&q=85",
+                desc: "Clean, authoritative, and charismatic headshot photography for portfolios and corporate branding."
+            },
+            {
+                title: "Romantic Outdoor Pre-Wedding Shoot",
+                category: "outdoor",
+                categoryLabel: "Outdoor Shoot",
+                image: "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=1200&q=85",
+                desc: "Romantic outdoor couple photography capturing serene natural moments in scenic park gardens."
+            },
+            {
+                title: "Creative Lens Framing & Details",
+                category: "wedding",
+                categoryLabel: "Wedding Shoot",
+                image: "https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&w=1200&q=85",
+                desc: "Macro focus on wedding rings, heirloom jewelry, and delicate bridal henna artistry."
+            }
+        ];
+
+        let currentLightboxIndex = 0;
+        let activeFilteredList = portfolioItems.map((_, i) => i);
+
+        // Portfolio Lightbox Trigger
+        function openPortfolioLightbox(index) {
+            currentLightboxIndex = index;
+            updateLightbox();
+            const modal = document.getElementById('lightbox-modal');
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            const modal = document.getElementById('lightbox-modal');
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        function updateLightbox() {
+            const item = portfolioItems[currentLightboxIndex];
+            if (!item) return;
+
+            document.getElementById('lightbox-img').src = item.image;
+            document.getElementById('lightbox-category').textContent = item.categoryLabel;
+            document.getElementById('lightbox-counter').textContent = `${currentLightboxIndex + 1} / ${portfolioItems.length}`;
+            document.getElementById('lightbox-title').textContent = item.title;
+            document.getElementById('lightbox-desc').textContent = item.desc;
+        }
+
+        function navigateLightbox(dir) {
+            currentLightboxIndex = (currentLightboxIndex + dir + portfolioItems.length) % portfolioItems.length;
+            updateLightbox();
+        }
+
+        function bookFromLightbox() {
+            const item = portfolioItems[currentLightboxIndex];
+            closeLightbox();
+            if (item) {
+                selectServiceAndScroll(item.categoryLabel);
+            }
+        }
+
+        // Service Select & Scroll Helper
+        function selectServiceAndScroll(serviceName) {
+            const select = document.getElementById('shoot-service');
+            const booking = document.getElementById('booking');
+
+            if (select) {
+                for (let i = 0; i < select.options.length; i++) {
+                    if (select.options[i].value.toLowerCase().includes(serviceName.toLowerCase()) || 
+                        serviceName.toLowerCase().includes(select.options[i].value.toLowerCase())) {
+                        select.selectedIndex = i;
+                        break;
+                    }
+                }
+                updateWhatsAppPreview();
+            }
+
+            if (booking) {
+                booking.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        // WhatsApp Message Builder
+        function buildWhatsAppMessage() {
+            const name = document.getElementById('client-name')?.value.trim() || "[Your Name]";
+            const phone = document.getElementById('client-phone')?.value.trim() || "[Contact Number]";
+            const service = document.getElementById('shoot-service')?.value || "[Select Service]";
+            const date = document.getElementById('event-date')?.value || "[Event Date]";
+            const location = document.getElementById('event-location')?.value.trim() || "[Location / City]";
+            const message = document.getElementById('client-message')?.value.trim() || "No additional notes.";
+
+            return `🌟 *NEW SHOOT BOOKING REQUEST* 🌟
+----------------------------------
+👤 *Client Name:* ${name}
+📞 *Contact Number:* ${phone}
+📸 *Service Requested:* ${service}
+📅 *Event Date:* ${date}
+📍 *Shoot Location:* ${location}
+💬 *Message/Notes:* ${message}
+----------------------------------
+*Studio:* ZM Studio Photography & Videography
+*Location:* Multan Road, Near Polytechnic College
+*Official Contact:* 03449170933`;
+        }
+
+        function updateWhatsAppPreview() {
+            const previewBox = document.getElementById('whatsapp-preview-box');
+            if (previewBox) {
+                previewBox.textContent = buildWhatsAppMessage();
+            }
+        }
+
+        function handleBookingSubmit(event) {
+            event.preventDefault();
+            const message = buildWhatsAppMessage();
+            const encoded = encodeURIComponent(message);
+            const url = `https://wa.me/${siteConfig.whatsappNumber}?text=${encoded}`;
+            window.open(url, '_blank');
+        }
+
+        // DOM Ready Initializer
+        document.addEventListener('DOMContentLoaded', () => {
+            // Set current year
+            const yearElem = document.getElementById('current-year');
+            if (yearElem) yearElem.textContent = new Date().getFullYear();
+
+            // Set minimum date to today
+            const dateInput = document.getElementById('event-date');
+            if (dateInput) {
+                dateInput.setAttribute('min', new Date().toISOString().split('T')[0]);
+            }
+
+            // Live preview listeners
+            const formInputs = ['client-name', 'client-phone', 'shoot-service', 'event-date', 'event-location', 'client-message'];
+            formInputs.forEach(id => {
+                const el = document.getElementById(id);
+                if (el) {
+                    el.addEventListener('input', updateWhatsAppPreview);
+                    el.addEventListener('change', updateWhatsAppPreview);
+                }
+            });
+            updateWhatsAppPreview();
+
+            // Portfolio Category Filtering
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const cards = document.querySelectorAll('.portfolio-card');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+
+                    const category = btn.getAttribute('data-filter');
+                    cards.forEach(card => {
+                        if (category === 'all' || card.getAttribute('data-category') === category) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            // Lightbox Controls
+            document.getElementById('lightbox-close')?.addEventListener('click', closeLightbox);
+            document.getElementById('lightbox-prev')?.addEventListener('click', (e) => { e.stopPropagation(); navigateLightbox(-1); });
+            document.getElementById('lightbox-next')?.addEventListener('click', (e) => { e.stopPropagation(); navigateLightbox(1); });
+            document.getElementById('lightbox-modal')?.addEventListener('click', (e) => {
+                if (e.target.id === 'lightbox-modal') closeLightbox();
+            });
+
+            document.addEventListener('keydown', (e) => {
+                const modal = document.getElementById('lightbox-modal');
+                if (!modal?.classList.contains('active')) return;
+                if (e.key === 'Escape') closeLightbox();
+                if (e.key === 'ArrowLeft') navigateLightbox(-1);
+                if (e.key === 'ArrowRight') navigateLightbox(1);
+            });
+
+            // Mobile Navigation Toggle
+            const toggleBtn = document.getElementById('mobile-menu-toggle');
+            const mobileMenu = document.getElementById('mobile-menu');
+            toggleBtn?.addEventListener('click', () => {
+                mobileMenu?.classList.toggle('open');
+            });
+
+            document.querySelectorAll('.mobile-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu?.classList.remove('open');
+                });
+            });
+
+            // Sticky Header Scroll Effect
+            window.addEventListener('scroll', () => {
+                const header = document.getElementById('main-header');
+                if (window.scrollY > 40) {
+                    header?.classList.add('scrolled');
+                } else {
+                    header?.classList.remove('scrolled');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
